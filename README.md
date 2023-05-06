@@ -1,0 +1,2 @@
+# Azure-Practice
+Practice repository
