@@ -1,0 +1,25 @@
+name: TestComplete Test
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  test:
+    runs-on: self-hosted
+    instance-type: t2.xlarge
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install TestComplete
+        run: |
+          echo "Installing TestComplete"
+          "<path_to_installation_package>/TestComplete1551_Release.exe" -SilentInstall
+
+      - name: Run TestComplete
+        run: |
+          echo "Running TestComplete"
+          "C:/Program Files (x86)/SmartBear/TestComplete 15/Bin/TestComplete.exe" "path to the project.pjs file" /r /p:"project name" /t:"KeywordTests:TestName" /exit /SilentMode
