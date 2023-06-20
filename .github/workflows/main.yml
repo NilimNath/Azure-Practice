@@ -22,4 +22,4 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
-          "C:/Program Files (x86)/SmartBear/TestComplete 15/Bin/TestComplete.exe" "path to the project.pjs file" /r /p:"project name" /t:"KeywordTests:TestName" /exit /SilentMode
+          "C:/Program Files (x86)/SmartBear/TestComplete 15/Bin/TestComplete.exe" "C:\Users\Administrator\Documents\TestComplete 15 Projects\TestProject2\TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests:Test1" /exit /SilentMode
