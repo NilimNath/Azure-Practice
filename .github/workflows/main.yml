@@ -8,8 +8,7 @@ on:
 jobs:
   test:
     runs-on: self-hosted
-    instance-type: t2.xlarge
-
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
