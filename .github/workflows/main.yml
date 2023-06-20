@@ -14,11 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install TestComplete
-        run: |
-          echo "Installing TestComplete"
-          "<path_to_installation_package>/TestComplete1551_Release.exe" -SilentInstall
-
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
