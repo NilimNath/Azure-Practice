@@ -18,4 +18,4 @@ jobs:
           echo "Running TestComplete"
           cmd.exe
           cd "C:\PerfLogs\x64\Bin\"
-          TestComplete.exe "C:/Users/Administrator/Documents/TestComplete 15 Projects/TestProject2/TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests|Test1" 
+          TestComplete.exe "C:/Users/Administrator/Documents/TestComplete 15 Projects/TestProject2/TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests|Test1"
