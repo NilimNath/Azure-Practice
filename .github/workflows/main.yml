@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: EC2AMAZ-25V74AM
+    runs-on: self-hosted
     
     steps:
       - name: Checkout code
