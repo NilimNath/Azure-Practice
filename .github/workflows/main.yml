@@ -16,6 +16,6 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
-          
+          cmd.exe
           cd "C:\PerfLogs\x64\Bin\"
           .\TestComplete.exe "$env:GITHUB_WORKSPACE/.github/workflows/TestProject2/TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests|Test1"
