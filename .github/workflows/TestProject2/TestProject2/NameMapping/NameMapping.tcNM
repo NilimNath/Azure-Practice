@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{46ACDAEB-03D5-4F1B-8740-0CA0FDE6DEE2}">
+				<TypeInfo Item0="{3482B971-EE8A-49BB-8040-89164FD7883B}" />
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="notepad" Key="{F4BB60F0-7B4F-4337-B422-B0A9EAE65B27}">
+						<TypeInfo Item0="{E210E9F2-6A9A-470E-A02C-3037CE5CB530}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="notepad" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndNotepad" Key="{E1608922-8D71-4589-9C5D-09020211EA5B}">
+								<Image FileName="1152689240" Left="0" Top="0" Right="1800" Bottom="949" />
+								<TypeInfo Item0="{FFF19215-2A8A-4808-A025-1F786EF83FFC}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Notepad" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="dlgFont" Key="{E7271D4E-5D4B-4E60-A99C-6319D7ACC54A}">
+								<Image FileName="1286238488" Left="0" Top="0" Right="504" Bottom="632" />
+								<TypeInfo Item0="{FFF19215-2A8A-4808-A025-1F786EF83FFC}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Font" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="notepad" Owner="{F4BB60F0-7B4F-4337-B422-B0A9EAE65B27}">
+			<Child Name="wndNotepad" Owner="{E1608922-8D71-4589-9C5D-09020211EA5B}" />
+			<Child Name="dlgFont" Owner="{E7271D4E-5D4B-4E60-A99C-6319D7ACC54A}" />
+		</Child>
+	</LogicalNodes>
+</Root>
