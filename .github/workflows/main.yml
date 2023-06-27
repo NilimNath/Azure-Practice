@@ -17,4 +17,4 @@ jobs:
         run: |
           echo "Running TestComplete"
           cd "C:\PerfLogs\x64\Bin"
-          .\TestComplete.exe "C:/Users/Administrator/Documents/TestComplete 15 Projects/TestProject2/TestProject2.pjs" /r /p:"TestProject2" /t:"@urgent" /exit /SilentMode
+          .\TestComplete.exe "C:/Users/Administrator/Documents/TestComplete 15 Projects/TestProject2/TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests|Test1" /exit /SilentMode
