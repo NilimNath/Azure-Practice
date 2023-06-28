@@ -17,11 +17,11 @@ jobs:
         run: echo "Running TestComplete"
 
       - name: Run TestComplete - Step 2
+        run: cmd.exe
+        
+      - name: Run TestComplete - Step 3
         run: cd "C:\PerfLogs\x64\Bin\"
 
-      - name: Run TestComplete - Step 3
-        run: cmd.exe
-
       - name: Run TestComplete - Step 4
-        run: C:\PerfLogs\x64\Bin\TestComplete.exe "C:\Users\Administrator\Documents\TestComplete 15 Projects\TestProject2\TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests|Test1" /exportLog:"C:\Users\Administrator\Desktop\Logs\results.html" /exit
+        run: TestComplete.exe "C:\Users\Administrator\Documents\TestComplete 15 Projects\TestProject2\TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests|Test1" /exportLog:"C:\Users\Administrator\Desktop\Logs\results.html" /exit
   
