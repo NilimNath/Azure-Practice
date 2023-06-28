@@ -14,8 +14,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run TestComplete
-        run: |
-          echo "Running TestComplete"
-          cd "C:\PerfLogs\x64\Bin\"
-          cmd.exe |
+        run: >
+          echo "Running TestComplete";
+          cd "C:\PerfLogs\x64\Bin\";
+          cmd.exe;
           .\TestComplete.exe "C:\Users\Administrator\Documents\TestComplete 15 Projects\TestProject2\TestProject2.pjs" /r /p:"TestProject2" /t:"KeywordTests|Test1" /exportLog:"C:\Users\Administrator\Desktop\Logs\results.html" /exit
