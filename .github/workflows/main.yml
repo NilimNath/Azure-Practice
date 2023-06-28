@@ -13,10 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
   
-      - name: Run TestComplete - Step 1
-        run: echo "Running TestComplete"
-        
-      - name: Run TestComplete - Step 2
+      - name: Run TestComplete
         run: |
+          echo "Running TestComplete"
           cd "C:\Users\Administrator\Documents" 
           .\runner.bat
