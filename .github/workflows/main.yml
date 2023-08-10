@@ -1,20 +1,25 @@
 name: TestComplete Test
 
 on:
-  push:
-    branches: 
-      - main
+ push:
+  branches: 
+   - main
 
 jobs:
-  test:
-    runs-on: self-hosted
-    
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+ test:
+  runs-on: self-hosted
   
-      - name: Run TestComplete
-        run: |
-          echo "Running TestComplete"
-          cd "C:\Users\Administrator\Documents" 
+ steps:
+  - name: Checkout code
+   uses: actions/checkout@v3
+   
+  - name: Install TestComplete
+   run: |
+    echo "Installing TestComplete"
+     "C:\Program Files (x86)\SmartBear\TestComplete1551SLM.exe" -SilentInstall
+   
+  - name: Run TestComplete
+   run: |
+    echo "Running TestComplete"
+    cd "C:\Users\Administrator\Documents" 
           .\runner.bat
