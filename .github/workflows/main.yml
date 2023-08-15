@@ -17,9 +17,4 @@ jobs:
      run: |
       echo "Installing TestExecute"
       "C:\Users\Administrator\Downloads\TestExecute1554.exe"
-   
-   - name: Run TestComplete
-     run: |
-      echo "Running TestComplete"
-      cd "C:\Users\Administrator\Documents"
-          .\runner.bat
+ 
