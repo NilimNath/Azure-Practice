@@ -13,13 +13,13 @@ jobs:
    - name: Checkout code
      uses: actions/checkout@v3
    
-   - name: Install TestComplete
+   - name: Install TestExecute
      run: |
-      echo "Installing TestComplete"
-      "C:\Program Files (x86)\SmartBear\TestComplete1551SLM.exe" -SilentInstall
+      echo "Installing TestExecute"
+      "C:\Users\Administrator\Downloads\TestExecute1554.exe"
    
    - name: Run TestComplete
      run: |
       echo "Running TestComplete"
-      cd "C:\Users\Administrator\Documents" 
+      cd "C:\Users\Administrator\Documents"
           .\runner.bat
