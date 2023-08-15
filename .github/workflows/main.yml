@@ -16,5 +16,5 @@ jobs:
    - name: Install TestExecute
      run: |
       echo "Installing TestExecute"
-      "C:\Users\Administrator\Downloads\TestExecute1554.exe"
+      "C:\Users\Administrator\Downloads\TestExecute1554.exe" -SilentInstall
  
