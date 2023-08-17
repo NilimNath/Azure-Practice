@@ -22,10 +22,10 @@ jobs:
         run: |
          echo "Starting job [Event=${{ github.event_name }}]"
          echo "This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-         - name: Download TestExecute
-           run: |
-           Invoke-WebRequest -Uri "${{ vars.TEST_EXECUTE_DOWNLOAD_URL }}" -OutFile ".\TE.exe"
-           echo "TestExecute downloaded - ${{ vars.TEST_EXECUTE_DOWNLOAD_URL }}"
+      - name: Download TestExecute
+        run: |
+         Invoke-WebRequest -Uri "${{ vars.TEST_EXECUTE_DOWNLOAD_URL }}" -OutFile ".\TE.exe"
+         echo "TestExecute downloaded - ${{ vars.TEST_EXECUTE_DOWNLOAD_URL }}"
       - name: Show working folder content
         run: dir
         shell: cmd
