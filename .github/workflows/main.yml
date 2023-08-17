@@ -14,7 +14,7 @@ jobs:
   DownloadInstallAndRunTE:
     name: Install and Run TestExecute (${{ github.actor }})
     timeout-minutes: 30
-    runs-on: windows-latest
+    runs-on: self-hosted
     permissions: write-all
     steps:
       - uses: actions/checkout@v3
@@ -28,16 +28,16 @@ jobs:
          echo "TestExecute downloaded - ${{ vars.TEST_EXECUTE_DOWNLOAD_URL }}"
       - name: Show working folder content
         run: dir
-        shell: cmd
+        shell: pwsh
       - name: Install TestExecute
         run: .\TE.exe -SilentInstall
-        shell: cmd
+        shell: pwsh
       - name: Env Variable for TestExecute bin folder
         run: set PATH_TE="${{ vars.TEST_EXECUTE_BIN }}"
-        shell: cmd
+        shell: pwsh
       - name: Launch TestExecute
         run: .\test-runner.bat ${{ secrets.TEST_EXECUTE_ACCESS_KEY }} ${{ inputs.project || 'Web' }}
-        shell: cmd
+        shell: pwsh
       - name: JUnit Report from TestExecute
         uses: dorny/test-reporter@v1.6.0
         if: always()
