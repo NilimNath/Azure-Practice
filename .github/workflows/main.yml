@@ -1,4 +1,4 @@
-name: TestExecute Simple Test
+name: TestExecute Test
 run-name: TestExecute run from GitHub Action (${{ github.actor }})
 on:
   push:
