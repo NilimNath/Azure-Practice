@@ -16,5 +16,4 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
-          ssh ad\nilim.nath@192.168.1.126
-          \.\runner.bat
+          ssh ad\nilim.nath@192.168.1.126 .\runner.bat
