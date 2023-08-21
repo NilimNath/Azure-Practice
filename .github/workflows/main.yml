@@ -17,5 +17,4 @@ jobs:
         run: |
           echo "Running TestComplete"
           ssh ad\nilim.nath@192.168.1.126
-          cd \
-          .\runner.bat
+          \.\runner.bat
