@@ -17,4 +17,4 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
-          ssh Administrator@172.31.30.178 -p 3389 .\runner.bat
+          ssh -v Administrator@172.31.30.178 -p 3389 .\runner.bat
