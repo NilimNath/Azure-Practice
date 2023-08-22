@@ -1,4 +1,4 @@
-name: TestComplete test
+name: TestComplete
 
 on:
   push:
