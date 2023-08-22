@@ -17,4 +17,4 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
-          ssh ad\Administrator@172.31.30.178 .\runner.bat
+          ssh-keyscan ad\Administrator@172.31.30.178 .\runner.bat
