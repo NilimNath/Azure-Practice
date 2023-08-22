@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     #runs-on: 192.168.1.126
-    runs-on: self-hosted
+    runs-on: EC2AMAZ-25V74AM
     
     steps:
       - name: Checkout code
@@ -17,4 +17,4 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
-          ssh-keyscan ad\Administrator@172.31.30.178 .\runner.bat
+          ssh Administrator@172.31.30.178 .\runner.bat
