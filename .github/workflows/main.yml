@@ -7,7 +7,6 @@ on:
 
 jobs:
   test:
-    #runs-on: 192.168.1.126
     runs-on: self-hosted
     
     steps:
@@ -17,5 +16,4 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
-          #ssh -v .\Administrator@172.31.30.178 -p 3389 .\runner.bat
           .\runner.bat
