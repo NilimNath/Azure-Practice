@@ -16,4 +16,5 @@ jobs:
       - name: Run TestComplete
         run: |
           echo "Running TestComplete"
+          cd "C:\PerfLogs\x64\Bin"
           .\runner.bat
